@@ -1,0 +1,94 @@
+:root {
+  --main-color: #6bbcbe;
+}
+body {
+  height: 100vh;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@keyframes coinFlip1 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  75% {
+    transform: rotateY(-180deg) translateX(-90px);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes coinFlip2 {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  25% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  75% {
+    transform: rotateZ(180deg) translateX(90px);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes boxAnimations {
+  0% {
+    transform: scaleY(1);
+  }
+  25% {
+    transform: scaleY(2);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  75% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+div {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  margin: 10px;
+}
+div:first-child {
+  background-color: tomato;
+  animation: coinFlip1 2s ease-in-out infinite;
+}
+div:nth-child(3) {
+  background-color: thistle;
+
+  animation: coinFlip2 2s ease-in-out infinite;
+}
+.circle {
+  border-radius: 50%;
+}
+
+.box {
+  width: 3vh;
+  height: 10%;
+  margin: 5px;
+  border-radius: 0;
+
+  animation: boxAnimations 2s ease-in-out infinite;
+
+  animation-delay: 2s;
+}

@@ -1,0 +1,86 @@
+body {
+  height: 100vh;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+header > h2 {
+  position: absolute;
+  top: 15px;
+  left: 37%;
+}
+div {
+  position: relative;
+  width: 20%;
+  height: 35%;
+  background-color: white;
+  margin: 10px;
+}
+div:nth-child(2),
+div:nth-child(3) {
+  left: 100px;
+}
+div:nth-child(4),
+div:last-child {
+  right: 100px;
+}
+.tomato {
+  position: relative;
+  background-color: tomato;
+  width: 120px;
+  height: 240px;
+  left: 3px;
+
+  display: flex;
+  flex-direction: column;
+}
+.teal {
+  position: relative;
+  background-color: teal;
+  width: 120px;
+  height: 240px;
+  left: 3px;
+
+  display: flex;
+  flex-direction: column;
+}
+.burlywood {
+  position: relative;
+  background-color: burlywood;
+  width: 120px;
+  height: 240px;
+  left: 3px;
+
+  display: flex;
+  flex-direction: column;
+}
+.thistle {
+  position: relative;
+  background-color: thistle;
+  width: 120px;
+  height: 240px;
+  left: 3px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+div > div {
+  background-color: black;
+}
+.min1 {
+  background-color: turquoise;
+  position: relative;
+  width: 130px;
+  height: 100px;
+  left: -20px;
+  top: 15px;
+  margin-left: 10px;
+}
+span {
+  position: relative;
+  color: teal;
+}
